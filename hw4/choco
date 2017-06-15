@@ -1,0 +1,72 @@
+setwd("H:/150 time series/hw4")
+cbe<- read.csv("cbe.csv", header = T)
+class(cbe)
+choco.ts <- ts(cbe[,1],start = 1958, freq =12)
+plot(choco.ts)
+view(cbe)
+cbe
+cbe[1:4,]
+cbe<- read.table("cbe.dat",header =T)
+cbe[1:4]
+cbe
+cbe[1:4]
+class(cbe)
+cbe[1:4]
+cbe[1:4,]
+cbe<- read.table("cbe.dat",header =T)
+cbe[1:4,]
+cbe<- read.table("cbe.dat",header =T)
+choco.ts <- ts(cbe[,1],start=1958,freq=12)
+plot(choco.ts)
+aggregate(choco.ts)
+plot(aggregate(choco.ts))
+boxplot(choco.ts ~ cycle(choco.ts))
+plot(decompose(choco.ts))
+plot(decompose(choco.ts, type="multi")
+plot(decompose(choco.ts, type="multi"))
+plot(decompose(choco.ts, type="multi"))
+plot(decompose(choco.ts))
+choco.dec<- plot(decompose(choco.ts))
+trend<-choco.dec$trend
+seasonal<-choco.dec$seasonal
+ts.plot(cbind(trend,trend*seasonal)
+ts.plot(cbind(trend,trend*seasonal)
+ts.plot(cbind(trend,trend*seasonal))
+choco.dec<- plot(decompose(choco.ts))
+choco.dec<- plot(decompose(choco.ts))
+choco.dec<- plot(decompose(choco.ts))
+trend<-choco.dec$trend
+seasonal<-choco.dec$seasonal
+ts.plot(cbind(trend, trend*seasonal))
+ts.plot(cbind(trend, trend~seasonal))
+ts.plot(cbind(trend, trend*seasonal))
+cbind
+trend[1:4,]
+trend[1:4,]
+trend
+trend<-choco.dec$trend
+trend
+trend*seasonal
+choco.decom<-decompose(choco.ts)
+plot(choco.decom)
+Trend<-choco.decom$trend
+Seasonal<-choco.decom$seasonal
+ts.plot(cbind(Trend, Trend*Seasonal))
+cbe
+choco
+choco.ts
+choco.decom<-decompose(choco.ts)
+plot(choco.decom)
+Trend<-choco.decom$trend
+Seasonal<-choco.decom$seasonal
+ts.plot(cbind(Trend, Trend*Seasonal))
+ts.plot(cbind(Trend, Trend+Seasonal))
+choco.decom<-decompose(choco.ts)
+Trend<-choco.decom$trend
+Seasonal<-choco.decom$seasonal
+ts.plot(cbind(Trend, Trend+Seasonal))
+choco.decom<-decompose(choco.ts, type="multi")
+plot(choco.decom)
+Trend<-choco.decom$trend
+Seasonal<-choco.decom$seasonal
+ts.plot(cbind(Trend, Trend*Seasonal))
